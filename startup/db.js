@@ -7,5 +7,5 @@ module.exports = () => {
       useUnifiedTopology: true,
     })
     .then(() => console.log(`Connected to MongoDb...`))
-    .catch((err) => console.log(err.message));
+    .catch((err) => console.log('MongoError', err.message));
 };
