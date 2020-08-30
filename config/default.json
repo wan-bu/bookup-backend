@@ -1,4 +1,6 @@
 {
   "userRoles": ["admin", "user"],
-  "dbUri": "mongodb://localhost/bookup"
+  "dbUri": "mongodb://localhost/bookup",
+  "jwt-private-key":"bookup",
+  "jwt-expires-in":"6h"
 }
