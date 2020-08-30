@@ -3,6 +3,7 @@ const users = require("../routes/users");
 const workhours = require("../routes/workhours.route");
 const activities = require("../routes/activities.route");
 const clients = require("../routes/client.route")
+const auth = require("../routes/auth.route")
 const express = require("express");
 
 module.exports = (app) => {
@@ -11,7 +12,9 @@ module.exports = (app) => {
   app.use("/users", users);
   app.use("/workhours", workhours);
   app.use("/activities", activities);
-  app.use("/clients",clients)
+  app.use("/clients",clients);
+  app.use("/auth",auth)
+
 };
 
 
