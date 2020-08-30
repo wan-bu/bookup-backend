@@ -18,12 +18,12 @@ Client = new mongoose.model(
     },
     email: {
       type: String,
-      required: true
+      required: true,
     },
     phone: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   })
 );
 const validate = (client) => {
@@ -31,10 +31,10 @@ const validate = (client) => {
     firstname: Joi.string().required(),
     lastname: Joi.string().required(),
     email: Joi.string().email().required(),
-    phone: Joi.string().required()
+    phone: Joi.string().required(),
   };
   return Joi.validate(client, schema);
 };
 
 module.exports.Client = Client;
-module.exports.validate = validate;
+module.exports.validateClient = validate;
