@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const config = require("config")
-const Joi = require('joi')
-Joi.objectId = require('joi-objectid')(Joi)
+const config = require("config");
+const Joi = require("joi");
+Joi.objectId = require("joi-objectid")(Joi);
 
 User = new mongoose.model(
   "User",
@@ -14,17 +14,24 @@ User = new mongoose.model(
     },
     email: String,
     password: String,
-    roles : {type:Array , enum:config.get('userRoles')}
+    roles: {
+      type: [String],
+      enum: config.get("userRoles"),
+      required: true,
+    },
   })
 );
-const validate = (user)=>{
+const validate = (user) => {
   const schema = {
-      username: Joi.string().required(),
-      email: Joi.string().required(),
-      password: Joi.string().required(),
-      roles:Joi.string().validate(config.get('userRoles'))
-      }
-  return Joi.validate(user,schema, { abortEarly: false });
-}
+    username: Joi.string().required(),
+    email: Joi.string().required(),
+    password: Joi.string().required(),
+    roles: Joi.array()
+      .items(Joi.string().valid(config.get("userRoles")).required())
+      .required(),
+  };
+  return Joi.validate(user, schema);
+};
 
-module.exports = User;
+module.exports.User = User;
+module.exports.validate = validate;

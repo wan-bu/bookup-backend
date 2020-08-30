@@ -1,3 +1,4 @@
 {
-  "userRoles":["Admin","User"]
+  "userRoles": ["admin", "user"],
+  "dbUri": "mongodb://localhost/bookup"
 }
