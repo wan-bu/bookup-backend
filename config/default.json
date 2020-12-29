@@ -3,7 +3,7 @@
     "admin",
     "user"
   ],
-  "dbUri": "mongodb+srv://bookup:bookup@cluster0.vnmjn.mongodb.net/test",
+  "dbUri": "mongodb+srv://bookup:bookup@cluster0.vnmjn.mongodb.net/bookup",
   "jwt-private-key": "bookup",
   "jwt-expires-in": "6h",
   "elasticCloudID": "i-o-optimized-deployment:ZWFzdHVzMi5henVyZS5lbGFzdGljLWNsb3VkLmNvbTo5MjQzJDBjM2QzMzVhOTVkZTRlZjI4N2FmMmNiNTQ4ZmY1NmJkJGFkZDJiNTJiMWYyZjQwNDFhNzAyYmNlNDgzZjViMWE4",
