@@ -1,6 +1,12 @@
 {
-  "userRoles": ["admin", "user"],
+  "userRoles": [
+    "admin",
+    "user"
+  ],
   "dbUri": "mongodb://localhost/bookup",
-  "jwt-private-key":"bookup",
-  "jwt-expires-in":"6h"
+  "jwt-private-key": "bookup",
+  "jwt-expires-in": "6h",
+  "elasticCloudID": "i-o-optimized-deployment:ZWFzdHVzMi5henVyZS5lbGFzdGljLWNsb3VkLmNvbTo5MjQzJDBjM2QzMzVhOTVkZTRlZjI4N2FmMmNiNTQ4ZmY1NmJkJGFkZDJiNTJiMWYyZjQwNDFhNzAyYmNlNDgzZjViMWE4",
+  "elasticCloudUsername": "elastic",
+  "elasticCloudPassword": "HcuZCecMLRvs07xBfe6F9i93"
 }

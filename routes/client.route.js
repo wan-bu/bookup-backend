@@ -9,6 +9,10 @@ router.get("/", async (req, res) => {
   res.send(await clientController.findAll());
 });
 
+router.get("/search", async (req, res) => {
+  res.send(await clientController.searchClients());
+});
+
 router.post("/", validate(validateClient), async (req, res) => {
   res.send(await clientController.save(req.body));
 });

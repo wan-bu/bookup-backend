@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/AhmedL-dev/bookup-backend#readme",
   "dependencies": {
+    "@elastic/elasticsearch": "^7.10.0",
     "config": "^3.3.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -26,7 +27,8 @@
     "joi-objectid": "^3.0.1",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.0",
-    "mongoose": "^5.10.0"
+    "mongoose": "^5.10.0",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
